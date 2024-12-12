@@ -1,0 +1,28 @@
+REMARK   1 CREATED WITH FORCEBALANCE 2024-12-10
+HETATM    1  C1  UNK A   0       0.367  -0.674   2.643  0.00  0.00           C  
+HETATM    2  C2  UNK A   0       2.359   0.536   1.959  0.00  0.00           C  
+HETATM    3  C3  UNK A   0       2.860   1.703   1.119  0.00  0.00           C  
+HETATM    4  N4  UNK A   0       0.934   0.325   1.734  0.00  0.00           N  
+HETATM    5 Cl5  UNK A   0       2.739   1.323  -0.647  0.00  0.00          Cl  
+HETATM    6 Cl6  UNK A   0       4.560   2.102   1.561  0.00  0.00          Cl  
+HETATM    7  H7  UNK A   0       0.405  -0.296   3.671  0.00  0.00           H  
+HETATM    8  H8  UNK A   0       0.886  -1.647   2.619  0.00  0.00           H  
+HETATM    9  H9  UNK A   0      -0.684  -0.835   2.387  0.00  0.00           H  
+HETATM   10  H10 UNK A   0       2.989  -0.347   1.760  0.00  0.00           H  
+HETATM   11  H11 UNK A   0       2.504   0.812   3.009  0.00  0.00           H  
+HETATM   12  H12 UNK A   0       2.262   2.598   1.278  0.00  0.00           H  
+HETATM   13  H13 UNK A   0       0.793   0.024   0.772  0.00  0.00           H  
+TER      14      UNK A   0
+CONECT    1    4    7    8    9
+CONECT    2    3    4   10   11
+CONECT    3    2    5    6   12
+CONECT    4    1    2   13
+CONECT    5    3
+CONECT    6    3
+CONECT    7    1
+CONECT    8    1
+CONECT    9    1
+CONECT   10    2
+CONECT   11    2
+CONECT   12    3
+CONECT   13    4

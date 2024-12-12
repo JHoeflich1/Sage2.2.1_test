@@ -1,164 +1,164 @@
-Wed Oct  2 08:23:46 PDT 2024
-hpc3-21-22
+Thu Dec  5 10:08:34 MST 2024
+c3cpu-a2-u1-4.rc.int.colorado.edu
 Number of core entries: 679
 Final coverage
-   t98:    5 /   10 records
-   t95:    5 /   65 records
-   t93:    5 /   24 records
-  t116:    5 /   26 records
-   t94:    5 /   12 records
-    t3:    5 /   56 records
+   t50:    5 /   13 records
+   t24:    5 /   38 records
+   t20:    5 /   93 records
+   t18:    5 /  168 records
+   t25:    5 /   20 records
+  t128:    3 /    3 records
     t9:    5 /   19 records
-   t44:    4 /    4 records
-   t87:    5 /   24 records
-   t75:    5 /  530 records
-   t78:    5 /  137 records
-   t15:    5 /    5 records
-   t16:    5 /   16 records
-   t59:    5 /   33 records
-   t60:    5 /   33 records
-   t61:    5 /   34 records
-   t62:    5 /   34 records
-  t143:    5 /   79 records
-  t149:    5 /   49 records
-  t144:    5 /   52 records
-  t148:    5 /   55 records
-  t146:    5 /   38 records
-  t118:    5 /   30 records
-   t70:    5 /   30 records
-  t154:    5 /    5 records
-  t115:    5 /   32 records
-   t86:    2 /    2 records
-   t82:    5 /   30 records
-    t1:    5 /   66 records
-    t4:    5 /   57 records
-   t66:    5 /   34 records
-   t67:    5 /   41 records
+    t3:    5 /  146 records
+    t4:    5 /  159 records
+    t5:    3 /    3 records
+   t91:    5 /   10 records
+   t92:    5 /   19 records
+  t124:    5 /   13 records
+  t83a:    5 /   16 records
+   t84:    5 /    9 records
+    t2:    5 /   56 records
    t64:    5 /   88 records
-   t76:    5 /   53 records
-   t18:    5 /  140 records
-   t17:    5 /  223 records
-   t26:    5 /   17 records
-   t19:    5 /   42 records
-   t45:    5 /   25 records
-   t80:    5 /    9 records
-  t111:    5 /    5 records
+   t69:    5 /   20 records
+  t119:    5 /   19 records
+  t118:    5 /   30 records
+   t14:    5 /   16 records
+   t13:    5 /   27 records
+  t121:    5 /   45 records
    t36:    5 /   15 records
    t27:    5 /  112 records
    t40:    5 /   23 records
    t32:    5 /   11 records
-   t47:    5 /  154 records
   t31a:    5 /    6 records
   t42a:    5 /    6 records
-   t31:    5 /    6 records
    t41:    5 /   17 records
+   t31:    5 /    6 records
    t42:    5 /   25 records
-  t109:    5 /   10 records
-  t108:    5 /   17 records
-   t51:    5 /   56 records
-  t138:    5 /   18 records
-   t12:    3 /    3 records
-   t23:    5 /   34 records
-  t127:    5 /   13 records
-   t14:    5 /   16 records
-   t13:    5 /   27 records
-   t96:    5 /   25 records
-    t2:    5 /   23 records
-   t10:    5 /   16 records
-   t25:    5 /   20 records
-   t20:    5 /   44 records
-   t24:    5 /   38 records
-  t131:    5 /   15 records
-  t132:    5 /   22 records
-   t50:    5 /    5 records
-  t110:    5 /   21 records
-  t107:    5 /   32 records
-   t84:    5 /    9 records
-  t121:    5 /   45 records
-   t49:    1 /    1 records
-  t157:    5 /    7 records
-   t58:    5 /   34 records
-   t11:    5 /   16 records
+  t111:    5 /    5 records
+   t47:    5 /  154 records
+   t48:    5 /   45 records
+    t6:    5 /   11 records
+    t8:    4 /    4 records
+    t1:    5 /   96 records
    t29:    5 /   18 records
    t37:    5 /    9 records
    t43:    5 /   45 records
-   t46:    1 /    1 records
-   t71:    5 /   17 records
-  t119:    5 /   19 records
-  t159:    5 /   19 records
-  t160:    5 /   11 records
-  t162:    5 /   17 records
+   t75:    5 /  530 records
+   t76:    5 /   53 records
+   t17:    5 /  278 records
+   t19:    5 /   42 records
+   t44:    4 /    4 records
+   t90:    5 /   12 records
+   t45:    5 /   38 records
+  t115:    5 /   32 records
+  t116:    5 /   26 records
+   t82:    5 /   30 records
+   t80:    5 /    9 records
+  t159:    5 /   39 records
   t161:    5 /   19 records
-  t105:    5 /   78 records
-   t48:    5 /   45 records
-  t147:    5 /   14 records
-  t152:    5 /   28 records
-  t134:    5 /   14 records
-   t92:    5 /   19 records
+  t163:    5 /   10 records
+  t162:    5 /   17 records
+   t67:    5 /   41 records
+   t66:    5 /   34 records
+   t26:    5 /   17 records
+   t28:    5 /   21 records
    t34:    5 /   24 records
    t38:    5 /   26 records
-   t28:    5 /   21 records
-   t21:    5 /   12 records
+  t105:    5 /   78 records
+  t107:    5 /   32 records
+   t86:    2 /    2 records
+   t87:    5 /   24 records
+  t138:    5 /   18 records
+  t135:    5 /    9 records
+   t39:    5 /   22 records
+   t33:    5 /   12 records
+   t35:    5 /   39 records
+   t11:    5 /   16 records
+    t7:    5 /    5 records
+  t143:    5 /   79 records
+  t149:    5 /   49 records
+  t160:    5 /   22 records
+  t152:    5 /   28 records
+  t153:    5 /   14 records
   t151:    5 /   27 records
+   t22:    5 /   15 records
+   t23:    5 /   34 records
+  t136:    5 /    5 records
+  t122:    5 /   29 records
+   t49:    1 /    1 records
+   t96:    5 /   27 records
+   t95:    5 /   99 records
+  t147:    5 /   14 records
+   t58:    5 /   38 records
+   t51:    5 /   56 records
+  t110:    5 /   21 records
+   t98:    5 /   10 records
+  t158:    2 /    2 records
+   t46:    5 /    7 records
+  t144:    5 /   52 records
+  t146:    5 /   38 records
+  t148:    5 /   55 records
+  t113:    2 /    2 records
+   t21:    5 /   12 records
   t156:    5 /   14 records
   t155:    5 /   12 records
-   t69:    5 /   20 records
-  t128:    3 /    3 records
-    t5:    3 /    3 records
-   t35:    5 /   39 records
-   t33:    5 /   12 records
-   t39:    5 /   22 records
-    t6:    5 /   11 records
-    t8:    4 /    4 records
-  t104:    5 /   18 records
-  t103:    5 /    9 records
-  t83a:    5 /   16 records
-  t145:    3 /    3 records
-  t142:    5 /   12 records
-  t124:    5 /   13 records
-   t22:    5 /   15 records
-  t136:    5 /    5 records
-  t153:    5 /   14 records
-  t106:    5 /   14 records
-    t7:    5 /    5 records
-  t122:    5 /   29 records
-  t114:    2 /    2 records
-  t113:    2 /    2 records
-  t135:    5 /    9 records
+   t70:    5 /   30 records
+   t59:    5 /   33 records
+   t61:    5 /   34 records
+   t60:    5 /   33 records
+   t62:    5 /   34 records
+   t16:    5 /   16 records
+   t15:    5 /    5 records
   t102:    5 /    6 records
-  t163:    5 /   10 records
-   t91:    5 /   10 records
-   t90:    5 /   12 records
-  t158:    2 /    2 records
+  t104:    5 /   18 records
+   t93:    5 /   24 records
+  t132:    5 /   22 records
+  t131:    5 /   15 records
+   t78:    5 /  137 records
+   t71:    5 /   17 records
+   t10:    5 /   16 records
+   t12:    3 /    3 records
+  t114:    2 /    2 records
+  t154:    5 /    5 records
+  t145:    3 /    3 records
+  t134:    5 /   14 records
+  t127:    5 /   13 records
+  t108:    5 /   17 records
+  t109:    5 /   10 records
+  t103:    5 /    9 records
+  t106:    5 /   14 records
+   t94:    5 /   12 records
+  t157:    5 /    7 records
+  t142:    5 /   12 records
    t74:    5 /  130 records
    t77:    5 /  208 records
-   t79:    5 /  148 records
-  t120:    5 /   11 records
-   t97:    5 /   14 records
   t150:    1 /    1 records
-   t53:    5 /    9 records
+   t79:    5 /  148 records
+   t97:    5 /   28 records
+  t120:    5 /   11 records
    t52:    5 /   11 records
+   t53:    5 /    9 records
    t56:    5 /    7 records
-   t54:    4 /    4 records
    t55:    5 /    5 records
+   t54:    4 /    4 records
    t57:    2 /    2 records
   t139:    5 /   12 records
-   t68:    5 /    9 records
-   t65:    5 /   11 records
-   t72:    5 /   13 records
   t82a:    5 /   10 records
+   t65:    5 /   11 records
+ t123a:    5 /    9 records
    t83:    5 /   15 records
-   t99:    5 /   10 records
   t100:    4 /    4 records
   t101:    1 /    1 records
- t123a:    5 /    9 records
+   t99:    5 /   10 records
+   t72:    5 /   13 records
   t125:    5 /    7 records
-  t130:    5 /   14 records
+   t68:    5 /    9 records
   t133:    5 /    8 records
-   t63:    5 /    8 records
+  t130:    5 /   14 records
   t48a:    1 /    1 records
-Total records: 2428
-Total records to keep: 728
-Number of entries after charge check: 1293
+   t63:    5 /    8 records
+Total records: 2670
+Total records to keep: 732
+Number of entries after charge check: 1287
 Saved to output/torsion-training-set.json
-Wed Oct  2 11:09:12 PDT 2024
+Thu Dec  5 12:18:22 MST 2024

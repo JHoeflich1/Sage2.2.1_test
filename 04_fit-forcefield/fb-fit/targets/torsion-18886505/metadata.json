@@ -1,0 +1,1 @@
+{"qccnv": true, "reset": true, "enforce": 0.1, "epsilon": 0, "coordsys": "tric", "torsion_grid_ids": [[-45], [-30], [-15], [0], [15], [30], [45]], "energy_decrease_thresh": null, "energy_upper_limit": 8.0, "dihedrals": [[16, 17, 18, 19]]}

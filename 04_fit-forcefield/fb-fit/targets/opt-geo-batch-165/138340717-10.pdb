@@ -1,0 +1,38 @@
+REMARK   1 CREATED WITH FORCEBALANCE 2024-12-10
+HETATM    1  O1  UNK A   0      -0.392  -2.372  -2.452  0.00  0.00           O  
+HETATM    2  C2  UNK A   0      -0.021  -1.097  -1.908  0.00  0.00           C  
+HETATM    3  C3  UNK A   0      -0.139  -1.025  -0.386  0.00  0.00           C  
+HETATM    4  C4  UNK A   0       0.826  -1.970   0.343  0.00  0.00           C  
+HETATM    5  C5  UNK A   0       0.743  -1.861   1.863  0.00  0.00           C  
+HETATM    6  S6  UNK A   0       1.924  -2.998   2.689  0.00  0.00           S  
+HETATM    7  O7  UNK A   0       3.265  -2.546   2.208  0.00  0.00           O  
+HETATM    8  O8  UNK A   0       1.685  -2.780   4.144  0.00  0.00           O  
+HETATM    9  O9  UNK A   0       1.530  -4.354   2.195  0.00  0.00           O  
+HETATM   10  H10 UNK A   0       0.991  -0.852   2.208  0.00  0.00           H  
+HETATM   11  H11 UNK A   0      -0.253  -2.127   2.231  0.00  0.00           H  
+HETATM   12  H12 UNK A   0       1.857  -1.761   0.034  0.00  0.00           H  
+HETATM   13  H13 UNK A   0       0.621  -3.015   0.081  0.00  0.00           H  
+HETATM   14  H14 UNK A   0      -1.176  -1.247  -0.098  0.00  0.00           H  
+HETATM   15  H15 UNK A   0       0.062   0.011  -0.078  0.00  0.00           H  
+HETATM   16  H16 UNK A   0      -0.696  -0.376  -2.383  0.00  0.00           H  
+HETATM   17  H17 UNK A   0       1.008  -0.842  -2.211  0.00  0.00           H  
+HETATM   18  H18 UNK A   0       0.101  -3.046  -1.958  0.00  0.00           H  
+TER      19      UNK A   0
+CONECT    1    2   18
+CONECT    2    1    3   16   17
+CONECT    3    2    4   14   15
+CONECT    4    3    5   12   13
+CONECT    5    4    6   10   11
+CONECT    6    5    7    8    9
+CONECT    7    6
+CONECT    8    6
+CONECT    9    6
+CONECT   10    5
+CONECT   11    5
+CONECT   12    4
+CONECT   13    4
+CONECT   14    3
+CONECT   15    3
+CONECT   16    2
+CONECT   17    2
+CONECT   18    1

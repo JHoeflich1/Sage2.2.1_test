@@ -1,12 +1,12 @@
 #!/bin/bash
 #SBATCH -J download_and_filter_opt
-#SBATCH -p standard
+#SBATCH -p amilan
 #SBATCH -t 4-00:00:00
+#SBATCH --qos=long
 #SBATCH --nodes=1
 #SBATCH --cpus-per-task=1
-#SBATCH --account dmobley_lab
+#SBATCH --account=ucb500_asc1 
 #SBATCH --export ALL
-#SBATCH --constraint=fastscratch
 #SBATCH -o download_and_filter_opt.out
 #SBATCH -e download_and_filter_opt.err
 
@@ -14,6 +14,7 @@ date
 hostname
 
 source ~/.bashrc
+ml anaconda
 conda activate sep-2024-env
 
 python curate-dataset.py download-opt                                           \

@@ -1,12 +1,11 @@
 #!/bin/bash
 #SBATCH -J msm
-#SBATCH -p free
+#SBATCH -p amilan
 #SBATCH -t 1-00:00:00
 #SBATCH --nodes=1
 #SBATCH --cpus-per-task=1
-#SBATCH --account dmobley_lab
+#SBATCH --account ucb-general
 #SBATCH --export ALL
-#SBATCH --constraint=fastscratch
 #SBATCH -o msm.out
 #SBATCH -e msm.err
 
@@ -14,6 +13,7 @@ date
 hostname
 
 source ~/.bashrc
+ml anaconda
 conda activate sep-2024-env 
 
 python create-msm-ff.py                                                                                     \

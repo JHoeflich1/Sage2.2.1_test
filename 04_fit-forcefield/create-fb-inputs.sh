@@ -1,19 +1,21 @@
 #!/bin/bash
 #SBATCH -J fb_input
-#SBATCH -p standard
+#SBATCH -p amilan
 #SBATCH -t 1-00:00:00
 #SBATCH --nodes=1
 #SBATCH --cpus-per-task=1
-#SBATCH --account dmobley_lab
+#SBATCH --account ucb-general
 #SBATCH --export ALL
-#SBATCH --constraint=fastscratch
 #SBATCH -o fb_input.out-%A
 #SBATCH -e fb_input.err-%A
+
+# creates output/schemas/optimizations folder
 
 date
 hostname
 
 source ~/.bashrc
+ml anaconda
 conda activate sep-2024-env 
 
 python create-fb-inputs.py                                                                          \

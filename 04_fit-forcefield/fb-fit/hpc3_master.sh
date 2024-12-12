@@ -1,43 +1,38 @@
 #!/bin/bash
 #SBATCH -J fit-2.2.1 
-#SBATCH -p standard
-#SBATCH -t 144:00:00
+#SBATCH -p amilan
+#SBATCH -t 7-00:00:00
+#SBATCH --qos=long
 #SBATCH --nodes=1
 #SBATCH --cpus-per-task=1
 #SBATCH --ntasks=1
 #SBATCH --mem=10000mb
-#SBATCH --account dmobley_lab
+#SBATCH --account ucb500_asc1
 #SBATCH --export ALL
-#SBATCH --constraint=fastscratch
 #SBATCH -o master-%A.out
 #SBATCH -e master-%A.err
 
+# Execute a force field optimization job using SLRUM for job scheduling and FB for computational tasks. Manages workflow by setting up a temp directory, activating a conda environemnt, and handling data transfers. 
+ml anaconda
 conda_env="sep-2024-env"
 
-compressed_env="/pub/amcisaac/sage-2.2.1-sdata/04_fit-forcefield/$conda_env.tar.gz"
-
-TMPDIR=/tmp/$USER/$SLURM_JOB_ID
+# Creates a temporary directory to isolate job files and prevent conflicts with other jobs
+TMPDIR=/scratch/alpine/juho8819/LipidsFFF/tmp/$SLURM_JOB_ID
 
 
 rm -rf $TMPDIR
-mkdir -p $TMPDIR
+mkdir -p $TMPDIR || { echo "Failed to create TMPDIR"; exit 1; }
 cd $TMPDIR
 
 pwd
 
 source $HOME/.bashrc
-
-cp $compressed_env .
-mkdir -p $conda_env
-tar -xzf $compressed_env -C $conda_env
-#conda activate $conda_env # next replace with conda source [script]
-source "$conda_env/bin/activate"
+conda activate $conda_env
 
 echo $CONDA_PREFIX > $SLURM_SUBMIT_DIR/env.path
 
-scp -C  $SLURM_SUBMIT_DIR/optimize.in     $TMPDIR
-scp -C  $SLURM_SUBMIT_DIR/targets.tar.gz  $TMPDIR
-scp -Cr $SLURM_SUBMIT_DIR/forcefield      $TMPDIR
+# Copies files from the submission directory to the temp directory 
+rsync -av  $SLURM_SUBMIT_DIR/{optimize.in,targets.tar.gz,forcefield}     $TMPDIR
 
 tar -xzf targets.tar.gz
 
@@ -47,22 +42,20 @@ echo $(hostname) > $SLURM_SUBMIT_DIR/host
 export OMP_NUM_THREADS=1
 export MKL_NUM_THREADS=1
 
-# in case of ownership issues messing with disk quota
-newgrp dmobley_lab_share
+
 mkdir -p result/optimize
+#creates an empty file named force-field.offxml to act as a placeholder for later operations
 touch result/optimize/force-field.offxml
 
-if ForceBalance.py optimize.in ; then
-   newgrp dmobley_lab_share
+if ForceBalance.py optimize.in ; then  #runs the force balance script using the input file optimize.in
    echo "-- Force field done --"
    # cat result/optimize/force-field.offxml > "${SLURM_SUBMIT_DIR}/result/optimize/force-field.offxml"
    echo "-- -- -- -- -- -- -- --"
-   tar -czf optimize.tmp.tar.gz optimize.tmp
+   tar -czf optimize.tmp.tar.gz optimize.tmp #compress the directory optimize.tmp into a tarball optimize.tmp.tar.gz
    rsync  -azIi -rv --exclude="optimize.tmp" --exclude="optimize.bak" \
-	  --exclude="fb*" \
-	  --chown=amcisaac:dmobley_lab_share  \
+	  --exclude="fb*"\
 	  --exclude="targets*" $TMPDIR/* $SLURM_SUBMIT_DIR > copy.log
-   rm -rf $TMPDIR
+   rm -rf $TMPDIR #rsync command synchronizes files from $TMPDIR to $SLURM_SUBMIT_DIR (job submission directory) 
 fi
 
 echo "All done"

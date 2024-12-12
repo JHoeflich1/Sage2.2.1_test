@@ -1,0 +1,40 @@
+REMARK   1 CREATED WITH FORCEBALANCE 2024-12-10
+HETATM    1  C1  UNK A   0       2.509   0.379  -0.600  0.00  0.00           C  
+HETATM    2  C2  UNK A   0       1.554   0.571  -1.659  0.00  0.00           C  
+HETATM    3  C3  UNK A   0       0.744  -0.529  -1.844  0.00  0.00           C  
+HETATM    4  C4  UNK A   0       2.404  -0.852  -0.017  0.00  0.00           C  
+HETATM    5  C5  UNK A   0       1.210   3.155  -1.703  0.00  0.00           C  
+HETATM    6  C6  UNK A   0       2.484   2.890  -2.463  0.00  0.00           C  
+HETATM    7  C7  UNK A   0       1.401   1.829  -2.435  0.00  0.00           C  
+HETATM    8  C8  UNK A   0      -0.383  -0.702  -2.825  0.00  0.00           C  
+HETATM    9  S9  UNK A   0       1.149  -1.815  -0.732  0.00  0.00           S  
+HETATM   10 Br10 UNK A   0       3.463  -1.529   1.402  0.00  0.00          Br  
+HETATM   11  H11 UNK A   0       3.240   1.115  -0.286  0.00  0.00           H  
+HETATM   12  H12 UNK A   0       1.246   3.122  -0.618  0.00  0.00           H  
+HETATM   13  H13 UNK A   0       0.496   3.864  -2.113  0.00  0.00           H  
+HETATM   14  H14 UNK A   0       2.644   3.416  -3.400  0.00  0.00           H  
+HETATM   15  H15 UNK A   0       3.394   2.708  -1.900  0.00  0.00           H  
+HETATM   16  H16 UNK A   0       0.828   1.725  -3.352  0.00  0.00           H  
+HETATM   17  H17 UNK A   0      -0.820  -1.703  -2.763  0.00  0.00           H  
+HETATM   18  H18 UNK A   0      -1.186   0.020  -2.637  0.00  0.00           H  
+HETATM   19  H19 UNK A   0      -0.038  -0.560  -3.855  0.00  0.00           H  
+TER      20      UNK A   0
+CONECT    1    2    4   11
+CONECT    2    1    3    7
+CONECT    3    2    8    9
+CONECT    4    1    9   10
+CONECT    5    6    7   12   13
+CONECT    6    5    7   14   15
+CONECT    7    2    5    6   16
+CONECT    8    3   17   18   19
+CONECT    9    3    4
+CONECT   10    4
+CONECT   11    1
+CONECT   12    5
+CONECT   13    5
+CONECT   14    6
+CONECT   15    6
+CONECT   16    7
+CONECT   17    8
+CONECT   18    8
+CONECT   19    8

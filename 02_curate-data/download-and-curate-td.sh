@@ -1,12 +1,12 @@
 #!/bin/bash
 #SBATCH -J download_and_filter_td
-#SBATCH -p standard
+#SBATCH -p amilan
 #SBATCH -t 4-00:00:00
+#SBATCH --qos=long
 #SBATCH --nodes=1
 #SBATCH --cpus-per-task=8
-#SBATCH --account dmobley_lab
+#SBATCH --account=ucb500_asc1
 #SBATCH --export ALL
-#SBATCH --constraint=fastscratch
 #SBATCH -o download_and_filter_td.out
 #SBATCH -e download_and_filter_td.err
 
@@ -14,6 +14,7 @@ date
 hostname
 
 source ~/.bashrc
+ml anaconda
 conda activate sep-2024-env
 
 python curate-dataset.py download-td                                                \
@@ -32,6 +33,8 @@ python curate-dataset.py download-td                                            
     --aux-td-dataset        "OpenFF Amide Torsion Set v1.0"                         \
     --aux-td-dataset        "OpenFF WBO Conjugated Series v1.0"                     \
     --aux-td-dataset        "OpenFF DANCE 1 eMolecules t142 v1.0"                   \
+    --aux-td-dataset        "OpenFF Alkane Torsion Drives v1.0"                     \
+    --aux-td-dataset        "OpenFF Phosphate Torsion Drives v1.0"                  \
     --initial-forcefield    "../01_generate-forcefield/output/initial-force-field.offxml" \
     --td-records-to-remove  "td_records_to_remove.dat"                              \
     --additional-td-records "additional_td_records.json"                            \
