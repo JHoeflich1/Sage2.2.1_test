@@ -11,9 +11,9 @@ port=$(awk '/port/ {print $NF}' optimize.in)
 echo "Host: $host"
 echo "Port: $port"
 
-
+# sage-2.2.1-sdata-core/
 USERNAME=$(whoami)
-export SLURM_TMPDIR=/scratch/alpine/juho8819/LipidsFFF/tmp
+export SLURM_TMPDIR=/scratch/alpine/juho8819/LipidsFFF/sage-2.2.1-sdata-core/tmp
 export MYTMPDIR="${SLURM_TMPDIR}/${USERNAME}"
 export TMPDIR=$SLURM_TMPDIR/
 

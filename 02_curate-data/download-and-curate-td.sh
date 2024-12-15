@@ -24,6 +24,8 @@ python curate-dataset.py download-td                                            
     --core-td-dataset       "OpenFF Gen 2 Torsion Set 4 eMolecules Discrepancy 2"   \
     --core-td-dataset       "OpenFF Gen 2 Torsion Set 5 Bayer 2"                    \
     --core-td-dataset       "OpenFF Gen 2 Torsion Set 6 supplemental 2"             \
+    --core-td-dataset       "OpenFF Alkane Torsion Drives v1.0"                     \
+    --core-td-dataset       "OpenFF Phosphate Torsion Drives v1.0"                  \
     --aux-td-dataset        "SMIRNOFF Coverage Torsion Set 1"                       \
     --aux-td-dataset        "OpenFF Group1 Torsions"                                \
     --aux-td-dataset        "OpenFF Group1 Torsions 2"                              \
@@ -33,8 +35,6 @@ python curate-dataset.py download-td                                            
     --aux-td-dataset        "OpenFF Amide Torsion Set v1.0"                         \
     --aux-td-dataset        "OpenFF WBO Conjugated Series v1.0"                     \
     --aux-td-dataset        "OpenFF DANCE 1 eMolecules t142 v1.0"                   \
-    --aux-td-dataset        "OpenFF Alkane Torsion Drives v1.0"                     \
-    --aux-td-dataset        "OpenFF Phosphate Torsion Drives v1.0"                  \
     --initial-forcefield    "../01_generate-forcefield/output/initial-force-field.offxml" \
     --td-records-to-remove  "td_records_to_remove.dat"                              \
     --additional-td-records "additional_td_records.json"                            \

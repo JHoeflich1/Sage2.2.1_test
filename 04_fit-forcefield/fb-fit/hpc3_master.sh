@@ -17,8 +17,8 @@ ml anaconda
 conda_env="sep-2024-env"
 
 # Creates a temporary directory to isolate job files and prevent conflicts with other jobs
-TMPDIR=/scratch/alpine/juho8819/LipidsFFF/tmp/$SLURM_JOB_ID
-
+TMPDIR=/scratch/alpine/juho8819/LipidsFFF/sage-2.2.1-sdata-core/tmp/$SLURM_JOB_ID
+# /scratch/alpine/juho8819/LipidsFFF/sage-2.2.1-sdata-core/tmp
 
 rm -rf $TMPDIR
 mkdir -p $TMPDIR || { echo "Failed to create TMPDIR"; exit 1; }

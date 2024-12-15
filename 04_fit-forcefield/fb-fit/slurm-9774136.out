@@ -1,0 +1,5 @@
+SLURM_JOB_NAME: submit_hpc3_worker_local.sh
+Host: c3cpu-c15-u26-3.rc.int.colorado.edu
+Port: 55481
+submitting worker 0 with 10 cpus on c3cpu-c15-u26-3.rc.int.colorado.edu:55481
+Submitted batch job 9774137
